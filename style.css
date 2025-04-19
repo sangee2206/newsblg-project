@@ -1,0 +1,206 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(https://lh3.googleusercontent.com/zReFVhk7jSI3Z_KtbOWuYsxT9Dp07PqHp376QzM3xA_1gADMC2106jsYWVDz8Q1Y85utGkiomao=w1440-ns-nd-rj);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.logo {
+    height: 120px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(15, 25, 55);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    width: 50%;
+    margin-right: 100px;
+}
+
+nav ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+}
+
+nav ul :hover a {
+    color: rgb(179, 82, 82);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 5%;
+}
+
+.container > div a {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 5%;
+}
+
+.container > div:hover a {
+    color: rgb(160, 211, 255);
+}
+
+.container > div:hover {
+    transform: scale(0.9);
+}
+
+.headline {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.cont1 {
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+}
+
+.cont2 {
+    background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202501/indiaai-mission-aims-to-develop-its-own-ai-infrastructure-304058271-16x9.jpg?VersionId=Q0zzU.eOLbrPgwWDbc0tBQ9TY5MaIyTL&size=690:388);
+    background-size: cover;
+}
+
+.cont3 {
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL4BLc0n8-yL578WvPW8gum6do7zZSUSdUhhWixoqBedusfO9r);
+    background-size: cover;
+}
+
+.cont4 {
+    background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202502/mk-stalin-back-pinarayi-vijayan-120444843-16x9.jpg?VersionId=IkvoNoIF95aqISDmBlSfoRweBgjzVmL0&size=690:388);
+    background-size: cover;
+}
+
+.cont5 {
+    background-image: url(https://th-i.thgim.com/public/news/national/tamil-nadu/2c2yt0/article69164374.ece/alternates/LANDSCAPE_1200/Aadhav%20Arjuna%20TVK%20Vijay.jpeg);
+    background-size: cover;
+}
+
+.cont6 {
+    background-image: url(https://th-i.thgim.com/public/incoming/t73z2n/article69174682.ece/alternates/LANDSCAPE_1200/IMG_80717_8_9_2023_18_25_2_1_G2C9HALK.jpg);
+    background-size: cover;
+}
+
+.cont7 {
+    background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202502/gongadi-trisha-021512639-16x9_1.jpg?VersionId=VDrw36EYCEzqIDDpKmj37164DNu3enUS&size=690:388);
+    background-size: cover;
+}
+
+.cont8 {
+    background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202501/satya-nadella-21345599-16x9.jpg?VersionId=ZJWodslfWWTKEi_ty5zp9mq._kG9jlhl&size=690:388);
+    background-size: cover;
+}
+
+.ele {
+    background-color: darkred;
+    color: white;
+    justify-content: start;
+    margin: 50px;
+    width: 10%;
+    margin-left: 2%;
+    padding-left: 1%;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding: 5%;
+}
+
+.cont-1 {
+    background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202502/national-kanimozhi-075949518-16x9.jpg?VersionId=I65UDDVK_M96nuZDknqHBipTED14pCby&size=690:388);
+    background-size: cover;
+}
+
+.cont-2 {
+    background-image: url(https://images.news9live.com/wp-content/uploads/2025/02/Delhi_polls.jpg?w=1200&enlarge=true);
+    background-size: cover;
+}
+
+.cont-3 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjF7fWGj7x38jl8D8oiy4jl32PjTUQVK2DhZMcJ_nunDNXxaDW_3qKEqvPTEVRV0N6RA&usqp=CAU);
+    background-size: cover;
+}
+
+.cont-4 {
+    background-image: url(https://media.andhrajyothy.com/media/2024/20240313/Rahul_Kejriwal_9d5c54aa87.jpg);
+    background-size: cover;
+}
+
+.cont-5 {
+    background-image: url(https://www.livemint.com/lm-img/img/2024/11/09/600x338/Congress-MP-Rahul-Gandhi--left--and-Telangana-chie_1731132683807_1731132701351.jpg);
+    background-size: cover;
+}
+
+.cont-6 {
+    background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202406/up-lok-sabha-chunav-update--up-chunav--up-chunav-2024--lok-sabha-election-update--lok-sabha-election-084720745-16x9.jpg?VersionId=EcNhD6I2UFUN58lnsUhwfdl38eHm9fym&size=690:388);
+    background-size: cover;
+}
+
+.container2 > div a {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 4%;
+}
+
+.container2 > div:hover a {
+    color: blue;
+}
+
+.container2 > div:hover {
+    transform: scale(0.9);
+}
+
+.container2 > div:nth-of-type(2) {
+    grid-column: 2/4;
+}
+
+.container2 > div:nth-of-type(4) {
+    grid-column: 1/3;
+}
+
+.container2 > div:nth-of-type(4) {
+    grid-row: 2/4;
+}
+
+#foot {
+    text-align: center;
+    background-color: rgb(237, 236, 236) ;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
